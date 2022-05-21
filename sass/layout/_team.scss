@@ -1,0 +1,78 @@
+.team {
+    background-color: var(--second-bgc);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__title {
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+}
+
+.members {
+    display: flex;
+    margin-left: -30px;
+    &__card {
+        background-color: var(--basic-bgc);
+        flex-basis: calc(100% / 4 - 30px);
+        margin-left: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+    &__info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+        &__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+    }
+        &__position {
+        color: var(--second-text-color);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 16px;
+    }
+}
+
+
+.member-soc-list {
+    display: flex;
+    justify-content: center;
+    &__link{
+        width: 44px;
+        height: 44px;
+        background-color: var(--basic-bgc);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: #AFB1B8;
+        transition-property: background-color, fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+            background-color: var(--color-accent);
+            fill: var(--basic-bgc)
+        }
+    }
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+

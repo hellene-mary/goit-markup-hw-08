@@ -1,0 +1,119 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: solid 1px #ECECEC ;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Raleway', Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    margin-right: 94px;
+}
+
+.accent {
+    color: var(--color-accent);
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link {
+    color: var(--text-color); 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        color: var(--color-accent);
+    }
+}
+
+.nav-item{
+    position: relative;
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.current::after{
+    content: "";
+    display: block;
+    color: var(--color-accent);
+    height: 4px;
+    width: 100%;
+    background: var(--color-accent);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.contacts-item:first-child{
+    margin-right: 30px;
+}
+
+.contacts-email, .contacts-tel {
+    text-decoration: none;
+    color: var(--second-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    fill: var(--second-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-icon-email {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.contacts-icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.contacts-email:hover, .contacts-email:focus {
+    color: var(--color-accent);
+}
+
+.contacts-email:hover .contacts-icon-email, 
+.contacts-email:focus .contacts-icon-email{
+    fill: currentColor;
+}
+
+.contacts-tel:hover, .contacts-tel:focus  {
+    color: var(--color-accent);
+}
+
+.contacts-tel:hover .contacts-icon-tel,
+.contacts-tel:focus .contacts-icon-tel{
+    fill:  currentColor;
+}
