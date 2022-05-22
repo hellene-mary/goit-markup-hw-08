@@ -39,7 +39,6 @@
         margin-bottom: 0;
         margin-right: 70px;
         text-align: left;
-    // min-width: 231px;
     }
 
 }
@@ -94,7 +93,6 @@
         margin-right: 93px;
         margin-bottom: 0;
     }
-    // margin-right: 93px;
 }
 
 .footer-soc-list {
@@ -130,12 +128,9 @@
     @media screen and (min-width: 1200px){
         display: flex;
     }
-    // display: flex;
 }
 
 .subscribe-input{
-    // margin-right: 15px;
-    // margin-left: 15px;
     margin: auto;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -149,6 +144,9 @@
     outline: none;
     &:focus{
         border-color: var(--color-accent);
+    }
+    @media screen and (max-width: 479px){
+        width: 300px;
     }
     @media screen and (min-width: 1200px){
         width: 358px;

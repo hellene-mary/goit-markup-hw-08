@@ -75,6 +75,8 @@
                 <ul class="foto-list list">
                     <li class="foto-item">
                         <img class="foto-image" 
+                        srcset="./images/image1.jpg 1x, 
+                            ./images/image1-desk-2x.jpg 2x"
                         src="./images/image1.jpg" 
                         alt="Работа за макбуком" 
                         width="370" height="294">
@@ -82,6 +84,8 @@
                     </li>
                     <li class="foto-item">
                         <img class="foto-image" 
+                        srcset="./images/image2.jpg 1x, 
+                            ./images/image2-desk-2x.jpg 2x"
                         src="./images/image2.jpg" 
                         alt="Работа за ноутом и смартфоном" 
                         width="370" height="294">
@@ -89,6 +93,8 @@
                     </li>
                     <li class="foto-item">
                         <img class="foto-image" 
+                        srcset="./images/image3.jpg 1x, 
+                            ./images/image3-desk-2x.jpg 2x"
                         src="./images/image3.jpg" 
                         alt="Планшет с палитрой цветов" 
                         width="370" height="294">
@@ -103,7 +109,18 @@
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-member">
-                        <img class="team-image" src="./images/photo1-mob.jpg" alt="Игорь Демьяненко" width="270">
+                        <picture>
+                            <source srcset="./images/photo1.jpg 1x, 
+                            ./images/photo1-desk-2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/photo1-tab.jpg 1x, 
+                            ./images/photo1-tab-2x.jpg 2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/photo1-mob.jpg 1x, 
+                            ./images/photo1-mob-2x.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img class="team-image" src="./images/photo1-mob.jpg" alt="Игорь Демьяненко">
+                        </picture>
                         <div class="team-info">
                             <p class="team-name">Игорь Демьяненко</p>
                             <p class="team-position" lang="en">Product Designer</p>
@@ -130,10 +147,20 @@
                                 </a></li>
                             </ul>
                         </div>
-
                     </li>
                     <li class="team-member">
-                        <img class="team-image" src="./images/photo2-mob.jpg" alt="Ольга Репина" width="270">
+                        <picture>
+                            <source srcset="./images/photo2.jpg 1x, 
+                            ./images/photo2-desk-2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/photo2-tab.jpg 1x, 
+                            ./images/photo2-tab-2x.jpg 2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/photo2-mob.jpg 1x, 
+                            ./images/photo2-mob-2x.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img class="team-image" src="./images/photo2-mob.jpg" alt="Ольга Репина">
+                        </picture>
                         <div class="team-info">
                             <p class="team-name">Ольга Репина</p>
                             <p class="team-position" lang="en">Frontend Developer</p>
@@ -162,7 +189,18 @@
                         </div>
                     </li>
                     <li class="team-member">
-                        <img class="team-image" src="./images/photo3-mob.jpg" alt="Николай Тарасов" width="270">
+                        <picture>
+                            <source srcset="./images/photo3.jpg 1x, 
+                            ./images/photo3-desk-2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/photo3-tab.jpg 1x, 
+                            ./images/photo3-tab-2x.jpg 2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/photo3-mob.jpg 1x, 
+                            ./images/photo3-mob-2x.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img class="team-image" src="./images/photo3-mob.jpg" alt="Николай Тарасов">
+                        </picture>
                         <div class="team-info">
                             <p class="team-name">Николай Тарасов</p>
                             <p class="team-position" lang="en">Marketing</p>
@@ -191,7 +229,18 @@
                         </div>
                     </li>
                     <li class="team-member">
-                        <img class="team-image" src="./images/photo4-mob.jpg" alt="Михаил Ермаков" width="270">
+                        <picture>
+                            <source srcset="./images/photo4.jpg 1x, 
+                            ./images/photo4-desk-2x.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/photo4-tab.jpg 1x, 
+                            ./images/photo4-tab-2x.jpg 2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/photo4-mob.jpg 1x, 
+                            ./images/photo4-mob-2x.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img class="team-image" src="./images/photo4-mob.jpg" alt="Михаил Ермаков">
+                        </picture>
                         <div class="team-info">
                             <p class="team-name">Михаил Ермаков</p>
                             <p class="team-position" lang="en">UI Designer</p>
