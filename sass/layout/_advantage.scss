@@ -1,15 +1,64 @@
 .advantage {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
-.advantage-list {display: flex;}
+.advantage-list {
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: -30px;
+    }
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+    }
+}
+
+.advantage-heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+    @media screen and (min-width: 768px){
+        text-align-last: left;
+    }
+}
+
+.advantage-text {
+    color: var(--second-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
 
 .advantage-item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
 }
 
-.advantage-item{
-    width: 270px;
+.advantage-item {
+    width: 100%;
+    @media screen and (min-width: 768px){
+        width: calc(100% / 2 - 30px);
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
+    }
 }
 
 .advantage-item::before {
@@ -38,19 +87,3 @@
     background-image: url('../images/icon4_astronaut.svg');
 }
 
-.advantage-heading {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    margin-top: 30px;
-}
-
-.advantage-text {
-    color: var(--second-text-color);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-}
