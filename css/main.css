@@ -515,8 +515,12 @@ img {
 }
 
 .foto {
-  padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .foto {
+    display: none;
+  }
 }
 
 .foto-title {
@@ -561,35 +565,68 @@ img {
 
 .team {
   background-color: var(--second-bgc);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team-title {
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
-  display: flex;
-  margin-left: -30px;
   /* justify-content: space-between; */
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .team-member {
   background-color: var(--basic-bgc);
-  flex-basis: calc(25% - 30px);
-  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .team-member {
+    width: calc(50% - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
 
-.team-title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+.team-image {
+  width: 100%;
 }
 
 .team-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team-name {
