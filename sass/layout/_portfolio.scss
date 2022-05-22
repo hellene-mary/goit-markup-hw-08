@@ -8,9 +8,6 @@
 }
 
 .portfolio-list{
-    // display: flex;
-    // flex-wrap: wrap;
-    // margin-left: -30px;
     margin-bottom: -30px;
     @media screen and (min-width: 768px){
         display: flex;
@@ -21,8 +18,6 @@
 }
 
 .portfolio-item {
-    // width: calc(100% / 3 - 30px);
-    // margin-left: 30px;
     margin-bottom: 30px;
     position: relative;
     transition-property: box-shadow;
@@ -50,6 +45,7 @@
 .portfolio-text{
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
+    
     // @media screen and (min-width: 768px){
     //     min-height: 140px;
     // }
