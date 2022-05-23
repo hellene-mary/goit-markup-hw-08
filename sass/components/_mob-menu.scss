@@ -80,6 +80,9 @@
     @media screen and (max-width: 480px){
         font-size: 24px;
     }
+    &:hover, &:focus{
+        color: var(--second-text-color);
+    }
 }
 
 .mob-menu-contacts-email {
@@ -100,6 +103,9 @@
 
 .mob-soc-list{
     display: flex;
+    @media screen and (max-width: 479px){
+        flex-wrap: wrap;
+    }
 }
 
 .mob-soc-item{
@@ -113,6 +119,9 @@
             position: absolute;
             left: -10px;
             top: -2px;
+            @media screen and (max-width: 380px){
+                display: none;
+            }
         }
     }
     &:not(:last-child){
@@ -122,6 +131,9 @@
 
 .mob-soc-link{
     color: var(--color-accent);
+    &:hover, &:focus{
+        color: var(--second-text-color);
+    }
 }
 
 .no-scroll {

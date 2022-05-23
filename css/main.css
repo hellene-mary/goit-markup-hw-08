@@ -816,15 +816,19 @@ img {
 
 .subscribe-box {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .subscribe-box {
-    display: flex;
+    flex-direction: row;
   }
 }
 
 .subscribe-input {
   margin: auto;
+  margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -847,18 +851,18 @@ img {
 @media screen and (min-width: 1200px) {
   .subscribe-input {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
 .subscribe-btn {
-  margin: 20px 140px 0 140px;
   color: var(--text-color-light);
   background-color: var(--color-button);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  min-width: 200px;
+  width: 200px;
   height: 50px;
   border-radius: 4px;
   fill: var(--text-color-light);
@@ -915,7 +919,7 @@ img {
 }
 
 .modal {
-  width: 450px;
+  width: 100%;
   min-height: 581px;
   background: #FFFFFF;
   position: absolute;
@@ -925,6 +929,11 @@ img {
 }
 .backdrop.is-hidden .modal {
   transform: rotateX(90deg);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1167,6 +1176,9 @@ img {
     font-size: 24px;
   }
 }
+.mob-menu-contacts-tel:hover, .mob-menu-contacts-tel:focus {
+  color: var(--second-text-color);
+}
 
 .mob-menu-contacts-email {
   text-decoration: none;
@@ -1187,6 +1199,11 @@ img {
 .mob-soc-list {
   display: flex;
 }
+@media screen and (max-width: 479px) {
+  .mob-soc-list {
+    flex-wrap: wrap;
+  }
+}
 
 .mob-soc-item {
   position: relative;
@@ -1200,12 +1217,20 @@ img {
   left: -10px;
   top: -2px;
 }
+@media screen and (max-width: 380px) {
+  .mob-soc-item:not(:first-of-type)::before {
+    display: none;
+  }
+}
 .mob-soc-item:not(:last-child) {
   margin-right: 20px;
 }
 
 .mob-soc-link {
   color: var(--color-accent);
+}
+.mob-soc-link:hover, .mob-soc-link:focus {
+  color: var(--second-text-color);
 }
 
 .no-scroll {

@@ -12,7 +12,7 @@
 }
 
 .modal{
-    width: 450px;
+    width: 100%;
     min-height: 581px;
     background: #FFFFFF;
     position: absolute;
@@ -21,6 +21,9 @@
     padding: 40px;
     .backdrop.is-hidden & {
         transform: rotateX(90deg);
+    }
+    @media screen and (min-width: 480px){
+        width: 450px;
     }
     @media screen and (min-width: 1200px){
         width: 528px;
