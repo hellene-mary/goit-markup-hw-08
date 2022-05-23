@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -15,6 +15,11 @@
     <header class="header">
         <div class="container">
             <a href="./index.html" class="logo"> <span class="accent">Web</span>Studio</a>
+            <button type="button" class="menu-open-btn">
+                <svg class="" width="40" height="40"> 
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
             <nav class="nav">
                 <ul class="nav-list list">
                     <li class="nav-item current"><a class="nav-link" href="./index.html">Студия</a></li>
@@ -34,6 +39,42 @@
                     </svg>
                     +38 096 111 11 11</a></li>
             </ul>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <button type="button" class="menu-close-btn">
+                    <svg class="close-btm-icon" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu-top">
+                    <ul class="mob-menu-nav-list list">
+                        <li class="mob-menu-nav-item"><a class="mob-menu-nav-link link" href="./index.html">Студия</a></li>
+                        <li class="mob-menu-nav-item"><a class="mob-menu-nav-link link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="mob-menu-nav-item"><a class="mob-menu-nav-link link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-menu-contacts list">
+                        <li class="mob-menu-contacts-item lisk"><a class="mob-menu-contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="mob-menu-contacts-item lisk"><a class="mob-menu-contacts-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mob-soc-list list">
+                        <li class="mob-soc-item list">
+                            <a href=""class="mob-soc-link link" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+                        </li>
+                        <li class="mob-soc-item list">
+                            <a href="" class="mob-soc-link link" target="_blank" rel="noopener noreferrer nofollow">Twitter</a>
+                        </li>
+                        <li class="mob-soc-item list">
+                            <a href=""class="mob-soc-link link" target="_blank" rel="noopener noreferrer nofollow">Facebook</a>
+                        </li>
+                        <li class="mob-soc-item">
+                            <a href="" class="mob-soc-link link" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -412,5 +453,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
