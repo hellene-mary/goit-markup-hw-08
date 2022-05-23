@@ -161,7 +161,7 @@ img {
   border-radius: 2px;
   position: absolute;
   left: 0;
-  bottom: -29px;
+  bottom: -24px;
 }
 @media screen and (min-width: 1200px) {
   .current::after {
