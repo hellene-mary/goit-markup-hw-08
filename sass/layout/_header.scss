@@ -1,12 +1,10 @@
 .header {
     padding-top: 10px;
     padding-bottom: 10px;
-    height: 60px;
     border-bottom: solid 1px #ECECEC ;
     @media screen and (min-width: 768px){
-        padding-top: 26px;
-        padding-bottom: 26px;
-        height: 80px;
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
     @media screen and (min-width: 1200px){
         padding-top: 24px;
@@ -92,7 +90,7 @@
     border-radius: 2px;
     position: absolute;
     left: 0;
-    bottom: -24px;
+    bottom: -34px;
     @media screen and (min-width: 1200px){
         bottom: -32px;
     }
