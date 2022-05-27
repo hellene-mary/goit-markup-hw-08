@@ -9,6 +9,9 @@
     align-items: center;
     justify-content: center; 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (orientation: landscape) {
+        overflow-y: auto;
+    }
 }
 
 .modal{
@@ -21,6 +24,10 @@
     padding: 40px;
     .backdrop.is-hidden & {
         transform: rotateX(90deg);
+    }
+    @media screen and (orientation: landscape) and (max-height: 581px){
+
+        top: 0;
     }
     @media screen and (min-width: 480px){
         width: 450px;
